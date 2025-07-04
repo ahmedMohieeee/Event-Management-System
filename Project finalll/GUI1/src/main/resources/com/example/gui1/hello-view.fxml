@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="389.0" stylesheets="@buttonStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui1.AttendeeGUI.HelloController">
+   <children>
+      <RadioButton fx:id="ViewYourProfile" layoutX="112.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToViewProfile" style="-fx-text-fill: white;" text="View your profile">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Options" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="EditPassword" layoutX="112.0" layoutY="140.0" mnemonicParsing="false" onAction="#switchToEditPassword" prefHeight="21.0" prefWidth="121.0" style="-fx-text-fill: white;" text="Edit password" toggleGroup="$Options">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="EditUsername" layoutX="112.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToEditUsername" style="-fx-text-fill: white;" text="Edit username or address" toggleGroup="$Options">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="EditDateOfBirth" layoutX="112.0" layoutY="220.0" mnemonicParsing="false" onAction="#switchToEditDateOfBirth" style="-fx-text-fill: white;" text="Edit date of birth" toggleGroup="$Options">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="AddInterests" layoutX="112.0" layoutY="260.0" mnemonicParsing="false" onAction="#switchToAddInterests" style="-fx-text-fill: white;" text="Add your Interests" toggleGroup="$Options">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="EventRegister" layoutX="112.0" layoutY="300.0" mnemonicParsing="false" onAction="#switchToEventRegister" style="-fx-text-fill: white;" text="Register for an event" toggleGroup="$Options">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RefundTicket" layoutX="112.0" layoutY="340.0" mnemonicParsing="false" onAction="#switchToRefundTicket" style="-fx-text-fill: white;" text="Refund ticket" toggleGroup="$Options">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="20.0" layoutY="29.0" prefHeight="36.0" prefWidth="349.0" style="-fx-text-fill: white;" text="Choose an action from below:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="AttendeeName" layoutX="260.0" layoutY="410.0" style="-fx-text-fill: white;" text="Logged in as: " />
+   </children>
+</AnchorPane>

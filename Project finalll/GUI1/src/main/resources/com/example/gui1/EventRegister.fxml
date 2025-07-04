@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="EventRegisterPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="684.0" stylesheets="@buttonStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui1.AttendeeGUI.EventsRegistrationController">
+   <children>
+      <Button fx:id="BackToOptions" layoutX="515.0" layoutY="433.0" mnemonicParsing="false" onAction="#switchBack" text="Back to options">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="239.0" layoutY="26.0" text="Event registeration">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TreeView fx:id="EventsTree" layoutX="9.0" layoutY="134.0" prefHeight="264.0" prefWidth="484.0" />
+      <Button fx:id="submitButton" layoutX="204.0" layoutY="410.0" mnemonicParsing="false" text="Submit" />
+      <Label fx:id="showEvent" layoutX="105.0" layoutY="99.0" text="Choose an event from the categories below:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmDeposit" layoutX="544.0" layoutY="299.0" mnemonicParsing="false" onAction="#confirmMoneyDeposited" text="Confirm" />
+      <Label layoutX="542.0" layoutY="159.0" text="Deposit money:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="moneyDeposit" layoutX="546.0" layoutY="239.0" prefHeight="36.0" prefWidth="95.0" promptText="Deposit money" />
+   </children>
+</AnchorPane>
