@@ -5,14 +5,12 @@ This Java-based desktop application provides a complete solution for managing ev
 
 👑 Administrator:
 The Admin oversees all aspects of the system and can manage:
-
 •Update their profile(username, role, date of birth, working hours)
 •Organizers – View, add, or remove organizers.
 •Attendees – View, add, or remove attendees.
 •Rooms – Add new rooms, view Rooms, or delete them.
 •Categories – Manage event categories.
 •Events – View and remove events (cannot create them).
-
 Smart Dependencies:
 •When an organizer is removed, all their events are canceled and their attendees are automatically refunded (organizer’s balance is adjusted accordingly).
 •Deleting an attendee removes them from registered events and issues a refund (reducing the event organizer’s balance).
@@ -20,20 +18,17 @@ Smart Dependencies:
 
 🧑‍💼 Organizer:
 Each Organizer has a dedicated dashboard that allows them to:
-
-•Update their profile(password)
+•Update their password.
 •Create events, specifying room, date/time, category, name, and Ticket price.
 •View available rooms by checking date and room name.
 •View events they have organized.
 •See a list of attendees who have paid for their events.
 •Delete events.
-
 Smart Dependencies:
 •Organizers cannot double-book rooms — if a room is taken at a specific time, it is shown as unavailable.
 
 🧑 Attendee:
 Users registered as attendees can:
-
 •Update their profile (password, username, date of birth, address).
 •Choose interests from available categories.
 •View events that match their selected interests.
@@ -43,21 +38,24 @@ Users registered as attendees can:
 
 🖥 User Interfaces
 All user types interact with intuitive dashboards. For example:
-
 •Organizer Dashboard features buttons for profile, event creation, room checking, and attendee tracking.
 •Attendee Panel includes profile management, interest selection, event browsing, and ticketing.
 •Admin Dashboard provides access to rooms, categories, organizers, attendees, and events.
 
 🔧 Technical Features
-
 •Built with Java using JavaFX for GUI
-•Uses Object-Oriented Programming principles like inheritance, encapsulation, and abstraction
-•Centralized static Database.java class to hold and manage all system data
-•Input validation included (e.g., wallet balance, interest filtering, room availability)
+•Uses Object-Oriented Programming principles like inheritance, encapsulation, and abstraction.
+•Centralized static Database.java class to hold and manage all system data.
+•Input validation included (e.g., wallet balance, interest filtering, room availability).
 
 📁 Project Structure
-Core classes: Admin, Organizer, Attendee, Event, Room, Category, Wallet
+Core classes: Admin, Organizer, Attendee, Event, Room, Category, Wallet.
+Database.java handles in-memory data storage.
+GUI screens for registration, login, and dashboards per user role.
 
-Database.java handles in-memory data storage
+🗂️ UI Screens and Components:
+The FXML files, CSS button styles, and user interface logic s well as birthdate are located at:
+src/main/resources/com/example/gui1 and src/main/java/com/example/gui1
 
-GUI screens for registration, login, and dashboards per user role
+🔎 Core classes such as Admin, Organizer, Attendee, Event, Room, Category, Wallet,Person,Gender,Database. are located in:
+src/main/java/Projectt
